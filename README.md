@@ -34,7 +34,7 @@ This can be donw by either their username (in the Github/Bitbucket platform host
 
 ```json
 {
-    "reviewers": [
+    reviewers: [
         '<some-user>',
         '<another-user>',
         'team:<some-group>',
@@ -47,12 +47,14 @@ This can be donw by either their username (in the Github/Bitbucket platform host
 Custom rules can be included for any project-specific requirements.
 
 ```json
-packageRules: [
-    {
-        # Sets up a Gradle rule to not upgrade past `8.x.x`.
-        "groupName": "Gradle",
-        "matchManagers": ["gradle-wrapper"],
-        "allowedVersions": "<=8.x"
-    },
+{
+    packageRules: [
+        {
+            # Sets up a Gradle rule to not upgrade past `8.x.x`.
+            "groupName": "Gradle",
+            "matchManagers": ["gradle-wrapper"],
+            "allowedVersions": "<=8.x"
+        },
+}
 ],
 ```
