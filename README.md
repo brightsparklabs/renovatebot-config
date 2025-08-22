@@ -7,8 +7,8 @@ See https://docs.renovatebot.com/configuration-options/
 
 This config has 2 main rules:
 
-. Minor/Patch Updates - Automatically merged.
-. Major Updates - PR created.
+- Minor/Patch Updates - Automatically merged.
+- Major Updates - PR created.
 
 ## Usage
 
