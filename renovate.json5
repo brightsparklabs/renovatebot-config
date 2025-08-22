@@ -13,19 +13,19 @@
                 'minor',
                 'patch',
                 'pin',
-                'digest'
+                'digest',
             ],
             automerge: true,
             automergeType: 'branch',
-            prCreation: 'status-success'
+            prCreation: 'status-success',
         },
         {
             groupName: 'Major Updates',
             matchUpdateTypes: [
-                'major'
+                'major',
             ],
             automerge: false,
-            prCreation: 'status-success'
-        }
-    ]
+            prCreation: 'status-success',
+        },
+    ],
 }

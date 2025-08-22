@@ -14,14 +14,19 @@ This config has 2 main rules:
 
 To use this config, import it in the `renovate.json5` file of the specific repository.
 
-```json
+```json5
 {
     extends: [
         'config:recommended',
-        'github>brightsparklabs/renovatebot-config'
+        'https://raw.githubusercontent.com/brightsparklabs/renovatebot-config/develop/renovate.json5',
     ],
 }
 ```
+
+NOTE: Importing this config requires a Github token to be supplied to the `developer.mend.io` portal.
+This has already been setup, but if the token needs to be rotated follow the link below:
+
+https://docs.mend.io/integrations/latest/generate-github-token-for-release-notes-and-golang
 
 ## Changes
 
@@ -32,7 +37,7 @@ There are a couple of things which should be configured by the importing reposit
 You will need to define which users will be asked to review any PR created by RenovateBot.
 This can be donw by either their username (in the Github/Bitbucket platform hosting that repository) or by a group.
 
-```json
+```json5
 {
     reviewers: [
         '<some-user>',
@@ -46,7 +51,7 @@ This can be donw by either their username (in the Github/Bitbucket platform host
 
 Custom rules can be included for any project-specific requirements.
 
-```json
+```json5
 {
     packageRules: [
         {
