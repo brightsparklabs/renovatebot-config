@@ -13,13 +13,11 @@
             automerge: true,
             automergeType: 'pr',
             automergeStrategy: 'squash',
-            prCreation: 'status-success',
         },
         {
             groupName: 'Major Updates',
             matchUpdateTypes: ['major'],
             automerge: false,
-            prCreation: 'status-success',
         },
     ],
 }
