@@ -9,23 +9,15 @@
     packageRules: [
         {
             groupName: 'All Minor and Patch Updates',
-            matchUpdateTypes: [
-                'minor',
-                'patch',
-                'pin',
-                'digest',
-            ],
+            matchUpdateTypes: ['minor', 'patch', 'pin', 'digest'],
             automerge: true,
-            automergeType: 'branch',
-            prCreation: 'status-success',
+            automergeType: 'pr',
+            automergeStrategy: 'squash',
         },
         {
             groupName: 'Major Updates',
-            matchUpdateTypes: [
-                'major',
-            ],
+            matchUpdateTypes: ['major'],
             automerge: false,
-            prCreation: 'status-success',
         },
     ],
 }
