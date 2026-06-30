@@ -10,9 +10,6 @@
         {
             groupName: 'All Minor and Patch Updates',
             matchUpdateTypes: ['minor', 'patch', 'pin', 'digest'],
-            automerge: true,
-            automergeType: 'pr',
-            automergeStrategy: 'squash',
         },
         {
             groupName: 'Major Updates',
